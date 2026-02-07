@@ -24,7 +24,12 @@
 
     h1 {
       font-size: 2.2rem;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.3rem;
       color: #333;
     }
 
@@ -50,6 +55,12 @@
       color: #333;
       position: absolute;
     }
+
+    img {
+      margin-top: 20px;
+      width: 220px;
+      height: 220px;
+    }
   </style>
 </head>
 
@@ -63,9 +74,13 @@
     function yes() {
       document.body.innerHTML = `
         <h1>YAY!! 💕🥰</h1>
-        <p style="font-size:1.3rem; color:#333;">
-          Still waiting to be asked myself tho 🕜😌
-        </p>
+        <p>Still waiting to be asked myself tho 🕜😌</p>
+        <p><strong>Date reveal 👀👇</strong></p>
+        <img 
+          src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://share.google/GjOkiAfRKTxQDlWLJ"
+          alt="Date Location QR Code"
+        >
+        <p style="margin-top:15px;">Scan me 📍💘</p>
       `;
     }
 
